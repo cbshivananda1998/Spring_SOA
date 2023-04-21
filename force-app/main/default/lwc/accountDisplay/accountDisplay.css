@@ -1,0 +1,21 @@
+h1{
+    font-size: large;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #ffffff;
+    text-align: right;
+}
+  
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+  
+tr:nth-child(odd) {
+    background-color: #d29d95;
+    color: #ffffff;
+}

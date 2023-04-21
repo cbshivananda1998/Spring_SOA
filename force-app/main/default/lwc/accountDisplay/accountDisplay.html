@@ -1,0 +1,24 @@
+<template>
+    <div>
+        <template if:true={error}>
+            <h1>{error}</h1>
+        </template>
+        <template if:false={error}>
+        <h1>Latest 10 Accounts:</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Account Number</th>
+                <th>Created Date/Time</th>
+            </tr>
+            <template for:each={accounts} for:item="account">
+                <tr key={account.Id}>
+                    <td>{account.Name}</td>
+                    <td>{account.AccountNumber}</td>
+                    <td>{account.CreatedDate}</td>
+                </tr>
+            </template>
+        </table>
+    </template>
+    </div>
+</template>
